@@ -21,7 +21,7 @@ public class Player implements Runnable {
         if(board.tokenList.isEmpty())
             System.out.println("Player: " + name + " won");
         while(!board.tokenList.isEmpty()) {
-                System.out.println(board.tokenList);
+
             token = board.getToken();
             board.removeToken(0);
             makeAritProg(token);

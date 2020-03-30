@@ -14,7 +14,7 @@ public class Game {
             tokenArrayListArr.add(new Token(getRandom(m)));
             count++;
         }
-        System.out.println(tokenArrayListArr.get(0).getNumber() + ", " + tokenArrayListArr.get(1).getNumber());
+
         Board board = new Board(tokenArrayListArr);
         Runnable player1 = new Player("Player1",board);
         Runnable player2 = new Player("Player2",board);
